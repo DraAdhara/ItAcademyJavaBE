@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/adhara/Archivos de Programación/JAVA Back End mac/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2624999224.index
+1881151888.index
