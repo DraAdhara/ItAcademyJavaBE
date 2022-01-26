@@ -6,7 +6,7 @@ public class Vehicle {
         String marca, modelo, color;
         int ano, ruedas, velocidad;
 
-        //Metodos constructor 1
+        /*Metodos constructor 1
         public Vehicle(String marca, String modelo) {
             this.marca = marca;
             this.modelo = modelo;
@@ -15,7 +15,7 @@ public class Vehicle {
             this.ruedas = 0;
             this.velocidad = 0;
         }
-
+        */
         //Metodo constructor 2
         public Vehicle(String marca, String modelo, String color, int ano, int ruedas) {
             this.marca = marca;
@@ -74,7 +74,7 @@ public class Vehicle {
 
         }
         public static void parar(){
-            System.out.println("Parada realizada");
+            System.out.println("Parada realizada.");
         }
 
         public void acelerar(){
