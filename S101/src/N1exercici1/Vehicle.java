@@ -71,4 +71,6 @@ public class Vehicle {
 
    }
 
+    public void parar() {
+    }
 }
