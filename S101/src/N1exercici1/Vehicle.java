@@ -69,7 +69,7 @@ public class Vehicle {
  //Resto de metodos
    public void iniciar (){
         this.velocidad = (velocidad + 10);
-        System.out.println("Mira como inicio:\nBruuuumm... voy a " + this.velocidad + "km/h.");
+        System.out.println("Mira lo que sé hacer:\nBruuuumm... voy a " + this.velocidad + "km/h.");
 
    }
 
