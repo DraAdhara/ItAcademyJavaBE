@@ -3,7 +3,7 @@ package N1exercici1;
 public class Vehicle {
 
     String marca, modelo, color;
-    int ano, ruedas, velMax;
+    int ano, ruedas, velocidad;
 
     //Metodos constructor 1
     public Vehicle (String marca, String modelo){
@@ -12,17 +12,18 @@ public class Vehicle {
         this.color = "";
         this.ano = 0;
         this.ruedas = 0;
-        this.velMax = 0;
+        this.velocidad = 0;
     }
     //Metodo constructor 2
-    public Vehicle (String marca, String modelo, String color, int ano, int ruedas, int velMax){
+    public Vehicle (String marca, String modelo, String color, int ano, int ruedas){
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
         this.ano = ano;
         this.ruedas = ruedas;
-        this.velMax = velMax;
+        this.velocidad = 0;
     }
+/*
 //Metodos Getter
     public String getMarca (){
         return this.marca;
@@ -39,8 +40,8 @@ public class Vehicle {
     public int getRuedas() {
         return this.ruedas;
     }
-    public int getVelMax() {
-        return this.velMax;
+    public int getVelocidad() {
+        return this.velocidad;
     }
 
 //Metodos Setter
@@ -59,13 +60,15 @@ public class Vehicle {
     public void setRuedas (int ruedas){
         this.ruedas = ruedas;
     }
-    public void setVelMax(int velMax) {
-        this.velMax = velMax;
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
     }
-
+*/
  //Resto de metodos
    public void iniciar (){
-        System.out.println("Mira como inicio:\nBruuuumm...");
+        this.velocidad = (velocidad + 10);
+        System.out.println("Mira como inicio:\nBruuuumm... voy a " + this.velocidad + "km/h.");
+
    }
 
 }

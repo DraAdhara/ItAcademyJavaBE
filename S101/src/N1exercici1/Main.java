@@ -7,7 +7,7 @@ public class Main {
     que es invocat pel main() (aquest mètode pot estar en la mateixa classe o en una classe apart) .
     Demostra la seqüència d'execució dels mètodes de la classe (per exemple, enviant un missatge a la consola).
     */
-    Vehicle coche1 = new Vehicle("Seat", "León", "Rojo", 2015, 4, 120);
+    Vehicle coche1 = new Vehicle("Seat", "León", "Rojo", 2015, 4);
 
     coche1.iniciar();
 
