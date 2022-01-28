@@ -36,10 +36,10 @@ public class Main{
                  //Creamos la primera instancia, con la clase ya cargada
                  DemoCarga dc1 = new DemoCarga();
 
-                 System.out.println("Si deseas probar otra opción, vuelve a iniciar el programa");
+                 System.out.println("Si deseas probar otra opción, vuelve a iniciar el programa.");
 
              } else {
-                 System.out.println("Opción no valida. Por favor, vuelve a iniciar el programa");
+                 System.out.println("Opción no valida. Por favor, vuelve a iniciar el programa.");
              }
 
 
