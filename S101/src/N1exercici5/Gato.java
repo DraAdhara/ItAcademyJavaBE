@@ -1,7 +1,7 @@
 package N1exercici5;
 
 public class Gato extends Animal{
-        private boolean domestico;
+        private final boolean domestico;
 
 
     public Gato(String nombre, String color, int edad, boolean domestico) {

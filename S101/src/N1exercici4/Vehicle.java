@@ -2,17 +2,17 @@ package N1exercici4;
 
 public class Vehicle {
     String marca, modelo, color;
-    final int ano;// se puede inicializar en el constructor de la clase, ver constructor 2
-    static int ruedas;// se puede inicializar en el constructor de la clase, ver constructor 2
-    int velocidad;
-    final static int velMax = 120;
+    private final int ano;// se puede inicializar en el constructor de la clase, ver constructor 2
+    private static int ruedas;// se puede inicializar en el constructor de la clase, ver constructor 2
+    private int velocidad;
+    private final static int velMax = 120;
 
     //Metodo constructor 1
     public Vehicle(String marca, String modelo) {
-        this.marca = marca;
+        this.marca  = marca;
         this.modelo = modelo;
-        this.color = "";
-        this.ano = 0;
+        this.color  = "";
+        this.ano    = 0;
         this.ruedas = 4;
 
 
@@ -20,11 +20,11 @@ public class Vehicle {
 
     //Metodo constructor 2
     public Vehicle(String marca, String modelo, String color, int ano, int ruedas, int velMax) {
-        this.marca = marca;
+        this.marca  = marca;
         this.modelo = modelo;
-        this.color = color;
+        this.color  = color;
         //inicializamos el atributo final int ano
-        this.ano = ano;
+        this.ano    = ano;
         //inicializamos el atributo static int ruedas
         this.ruedas = ruedas;
         /*

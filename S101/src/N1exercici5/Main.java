@@ -9,10 +9,12 @@ public class Main {
          */
 
         Gato mixi = new Gato("Silvestre", "blanco y negro", 8, true);
+
         //Llamamos a los 3 metodos sobrecargados de la superclase Animal
         mixi.correr();
         mixi.correr(4);
         mixi.correr(4, 6);
+
         //llamamos al metodo sobrecargado de la subclase Gato
         mixi.correr(4,8,"miau");
 
