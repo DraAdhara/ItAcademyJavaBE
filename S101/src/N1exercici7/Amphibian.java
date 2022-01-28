@@ -1,7 +1,6 @@
-package N1exercici6;
+package N1exercici7;
 
 public class Amphibian {
-
 
     public void mover() {
         System.out.println("Me estoy moviendo.");

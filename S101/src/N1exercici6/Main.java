@@ -15,7 +15,6 @@ public class Main {
         sup.comer();
 
         //llamamos a los metodos desde la subclase frog
-        rana.saltar();//para que se vea en terminal a partir de cuando imprime la llamada a la clase Frog
         rana.mover();
         rana.respirar();
         rana.comer();
