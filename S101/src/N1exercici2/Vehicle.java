@@ -3,26 +3,26 @@ package N1exercici2;
 public class Vehicle {
 
 
-        String marca, modelo, color;
-        int ano, ruedas, velocidad;
+        private String marca, modelo, color;
+        private int ano, ruedas, velocidad;
 
         /*Metodos constructor 1
         public Vehicle(String marca, String modelo) {
-            this.marca = marca;
-            this.modelo = modelo;
-            this.color = "";
-            this.ano = 0;
-            this.ruedas = 0;
+            this.marca     = marca;
+            this.modelo    = modelo;
+            this.color     = "";
+            this.ano       = 0;
+            this.ruedas    = 0;
             this.velocidad = 0;
         }
         */
         //Metodo constructor 2
         public Vehicle(String marca, String modelo, String color, int ano, int ruedas) {
-            this.marca = marca;
-            this.modelo = modelo;
-            this.color = color;
-            this.ano = ano;
-            this.ruedas = ruedas;
+            this.marca     = marca;
+            this.modelo    = modelo;
+            this.color     = color;
+            this.ano       = ano;
+            this.ruedas    = ruedas;
             this.velocidad = 0;
         }
 
