@@ -13,14 +13,14 @@ public class Animal {
     }
 
     public void correr (){
-        System.out.println("Estoy corriendo.");
+        System.out.println("Mira, estoy corriendo.");
     }
 
     public void correr(int patas){
-        System.out.println("Estoy corriendo con mis " + patas + " patas.");
+        System.out.println("Mira, estoy corriendo con mis " + patas + " patas.");
     }
     public void correr(int patas, int velocidad){
-        System.out.println("Estoy corriendo con mis " + patas + " patas a " + velocidad + "km/h.");
+        System.out.println("Mira,estoy corriendo con mis " + patas + " patas a " + velocidad + "km/h.");
     }
 
 }

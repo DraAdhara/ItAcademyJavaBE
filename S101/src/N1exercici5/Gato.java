@@ -12,7 +12,7 @@ public class Gato extends Animal{
     }
 
     public void correr (int patas, int velocidad, String sonido){
-        System.out.println("Estoy corriendo con mis " + patas +" patas a " + velocidad + "km/h mientras digo " + sonido + ".");
+        System.out.println("Mira, estoy corriendo con mis " + patas +" patas a " + velocidad + "km/h mientras digo " + sonido + ".");
 
     }
 }

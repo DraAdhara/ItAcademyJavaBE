@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         /*Exercici 5. Crea una classe Animal amb el mètode correr() sobrecarregat tres vegades. Defineix una nova classe
          (per exemple Gat) que hereti de l'anterior i afegeix una nova versió sobrecarregada del mateix mètode.
-         Mostra que els quatre mètodes estan disponibles a la classe derivada (per exemple enviant un missatge a la consola).
+         Mostra que els quatre mètodes estan disponibles a la classe derivada (per ex enviant un missatge a la consola).
          */
 
         Gato mixi = new Gato("Silvestre", "blanco y negro", 8, true);
