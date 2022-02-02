@@ -25,6 +25,7 @@ public class Month {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
+        //para que no repita el nombre, si ya está devuelve cero y si no devuelve el nombre
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         return result;
     }
