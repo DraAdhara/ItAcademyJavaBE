@@ -2,8 +2,11 @@ package N1exercici7;
 
 
 
+import java.security.Key;
 import java.util.*;
 import java.util.Map.Entry;
+
+
 
 public class Main {
     /*Exercici 7. Emplena un HashMap amb parelles clau-valor. Ordeni les parelles segons el codi hash i imprimeixi el
@@ -19,11 +22,11 @@ public class Main {
         listaHash.put("Sonia", 20);
         listaHash.put("Marta", 31);
         listaHash.put("Laura", 68);
-        //La listaHash queda ordenada así
+        //La listaHash queda ordenada así según código hash
         listaHash.entrySet().forEach(System.out::println);
         System.out.println("**************");
 
-        //Declaramos TreeMap, ordenamos según codigo hash ordenado alfabeticamente
+        //Declaramos TreeMap, ordenado alfabeticamente
         Map<String, Integer> listaTree = new TreeMap<>(listaHash);
         listaTree.entrySet().forEach(System.out::println);
         System.out.println("**************");
@@ -35,9 +38,30 @@ public class Main {
             listaLinked.put(entry.getKey(), entry.getValue());
         }
         System.out.println(listaLinked);
-    }
-    }
+        System.out.println("**************");
 
+        /*Extraemos la key y la introducimos en el nuevo hashSet declarado. Como Hashet,
+        no mantiene orden alfanumerico
+        */
+        HashSet<String> listaHashSet = new HashSet<String>();
+        for (Map.Entry<String, Integer> entry : listaLinked.entrySet()) {
+            //String key = entry.getKey();//al final uso otro metodo
+            listaHashSet.add(entry.getKey());
+          }
+        System.out.println(listaHashSet);
+        System.out.println("**************");
+
+        /*Volvemos a extraer la key y la introducimos en el linkedHashSet declarado, que si mantiene el orden
+
+         */
+        LinkedHashSet<String> listaLinkedKey = new LinkedHashSet<>();
+        for (Map.Entry<String, Integer> entry : listaLinked.entrySet()) {
+
+            listaLinkedKey.add(entry.getKey());
+        }
+        System.out.println(listaLinkedKey);
+    }
+}
 
 
 
