@@ -13,8 +13,16 @@ public class Main {
         */
         File fl = new File("Test_1.txt");
         FileReader fr = new FileReader(fl);
+        /*Comentaris del mentor:
+        Hauríem d'intentar que els exercicis es puguessin fer en qualsevol fitxer, no només amb el que hem posat dintre
+         del codi. per exemple:
+        String nameDir = args[0];
+        File dir = new File(nameDir);
+        */
+
 
         /*Creamos obj clase BufferedReader para leer la entrada de un archivo, se usa la funcion .readLine() que sirva
+
         para leer una sola linea de texto desde la consola
         */
         BufferedReader br = new BufferedReader(fr);
