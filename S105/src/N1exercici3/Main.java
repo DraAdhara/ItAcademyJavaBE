@@ -15,7 +15,7 @@ public class Main {
         PrintWriter pw = new PrintWriter(fw);
 
         //Llamamos al metodo creando el objeto File con la ruta y pasandolo como parametro y PrintWriter como segundo parametro
-        buscarEnDirectorio(new File("/Users/adhara/Archivos de Programación/MasterClass /MasterClass30PooHerencia"),pw);
+        buscarEnDirectorio(new File("/Volumes/SSD Adhara/Juegos/Rol"),pw);
     }
 
     public static void buscarEnDirectorio(File directorio,PrintWriter pw){

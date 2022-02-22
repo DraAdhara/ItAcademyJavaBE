@@ -1,7 +1,5 @@
 package N1exercici2;
 
-import org.junit.Test;
-
 import java.util.Locale;
 import java.util.Scanner;
 

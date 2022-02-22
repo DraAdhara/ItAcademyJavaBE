@@ -9,7 +9,7 @@ public class Main {
  funcionament amb un test jUnit.
   */
     }
-    void testExpectedException() {
+    public void testExpectedException() {
         int []numeros= {0,1,2,3,4,5};
 
 
