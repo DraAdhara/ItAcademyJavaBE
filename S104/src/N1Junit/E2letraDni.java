@@ -13,6 +13,14 @@ public class E2letraDni {
     private String letra, expected;
     private int numDni;
 
+    public E2letraDni(int numDni, String letra) {
+        String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
+
+        this.numDni = numDni;
+        this.letra = letra;
+        int calcExpected = this.numDni % 23;
+        this.expected = juegoCaracteres.charAt(calcExpected) + "";
+    }
 
     @Parameterized.Parameters
     public static Iterable<Object[]> getData(){
@@ -31,14 +39,8 @@ public class E2letraDni {
         return obj;
 */
     }
-    public E2letraDni(int numDni, String letra) {
-        String juegoCaracteres="TRWAGMYFPDXBNJZSQVHLCKE";
 
-        this.numDni = numDni;
-        this.letra = letra;
-        int calcExpected = numDni % 23;
-        this.expected = juegoCaracteres.charAt(calcExpected)+"";
-    }
+
     @Test
     public void testLetra() {
 
