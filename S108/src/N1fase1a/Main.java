@@ -11,33 +11,21 @@ public class Main {
     */
 
     public static void main(String[]args) {
-        ArrayList<String> nombres = new ArrayList<String>();
-        nombres.add("Adhara");
-        nombres.add("Ana");
-        nombres.add("David");
-        nombres.add("Aby");
-        nombres.add("Ada");
-        nombres.add("Estrella");
+        //Declaramos la lista con nombres que incluyan lo solicitado y otros que no.
+        List<String> listaNumeros = Arrays.asList("Adhara","Ada","Adebayo","Ana","Skywalker","Ali","Freddy","Ari");
+        //Imprimimos la lista
+        System.out.println("Lista original: "+ listaNumeros);
 
-        System.out.println("ArrayList: "+aAnd3(nombres));
-
-        List<String> namesList = Arrays.asList("Pedro","Ada","Alfonso","Ana","Eva","Ali","Juan","Ari");
-
-        System.out.println("Original name list: "+namesList);
-
-        List<String> a3names = namesList.stream()
+        //Declaramos la lista que va a contener lo solicitado en el enunciado
+        List<String> a3nombres = listaNumeros.stream()
+                //Filtramos por nombres que empiecen por A y tengan un tamaño de tres letras
                 .filter(n -> n.startsWith("A") && n.length() == 3)
                 .collect(Collectors.toList());
 
-        System.out.println("\nNames starting whit \"A\" and 3 letters: "+a3names);
+        System.out.println("\nNombres que empiezan por\"A\" y tienen 3 letras: "+a3nombres);
+
 
     }
 
-    private static List<String> aAnd3(List<String> names) {
-        //.stream().filter  ---> lo usamos para filtrar solo los nombres que empiecen con A y tengan 3 letras
-        List<String> aAnd3selected = names.stream()
-                .filter(n -> n.startsWith("A") && n.length() == 3)
-                .collect(Collectors.toList()); //recopila en una nueva lista los elementos extraidos
-        return aAnd3selected;
-    }
+
 }
