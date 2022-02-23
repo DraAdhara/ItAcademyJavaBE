@@ -2,10 +2,13 @@ package N1Junit;
 
 public class E3ArryException {
 
-    private int[] array = {0, 1, 2, 3, 4, 5};
+    public E3ArryException() {
 
-        int getIndex(int index) {
-            return array[index];
-        }
+    }
 
+    public static ArrayIndexOutOfBoundsException getThrow() {
+
+        throw new ArrayIndexOutOfBoundsException();
+
+    }
 }

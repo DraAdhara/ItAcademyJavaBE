@@ -64,20 +64,26 @@ dades ampli i validi si el càlcul és correcte per a 10 números de DNI predefi
 /*N1exercici3 E3ArrayException
 Exercici 3. Crea una classe amb un mètode que llanci una ArrayIndexOutOfBoundsException. Verifica el seu correcte funcionament amb un test jUnit
  */
+
+
     @Test
-    public void testExpectedException() {
-        int []numeros= {0,1,2,3,4,5};
+    void testThrow() {
 
+        try {
 
-        /*assertThrows espera que se lance esa excepcion dentro de ese trozo de codigo
-        ArrayIndexOutOfBoundsException se produce cuando intenta acceder a un índice de matriz que no existe, es decir
-        el índice es negativo o está fuera de los límites de la matriz.
-        */
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
-            int numero = numeros[10];
-        });
+            E3ArryException.getThrow();
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+            System.out.println(e);
+
+        }
 
     }
+
+
+
+
 
     //La anotiación @After sirve para indicar al código que se ejecute despúes del test
     //@Afterclass se ejectura una única vez después del test, debe ser static
