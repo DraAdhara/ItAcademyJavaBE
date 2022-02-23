@@ -1,5 +1,6 @@
 package N1exercici2;
-
+//IDE me lo marca como Redundant suppression, @SupressWarnings evita que salte el warning cuando se llama a un metodo obsoleto
+@SuppressWarnings("deprecation")
 public class ClaseHija2 extends ClasePadre {
     private String color;
 

@@ -1,7 +1,7 @@
 package N1exercici2;
 
 
-import java.sql.SQLOutput;
+
 
 public class Main {
 

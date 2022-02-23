@@ -20,7 +20,8 @@ public class ClasePadre {
     }
 
     public String toString() {
-        return "Nombre:"+nombre+" "+apellido+" .Edad: "+edad;
+        return "Nombre:"+nombre+" "+apellido+". Edad: "+edad + ".";
+
     }
 }
 
