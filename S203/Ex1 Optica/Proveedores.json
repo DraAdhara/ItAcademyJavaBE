@@ -13,9 +13,9 @@
     "ciudad": "Barcelona",
     "pais": "España"
   }
-}]
+}
 
-[{
+{
   "_id": 2,
   "nombre": "QuienTeHaVisto",
   "telefono": "333666999",
