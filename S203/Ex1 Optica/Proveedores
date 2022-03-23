@@ -1,0 +1,33 @@
+[{
+  "_id": 1,
+  "nombre": "LoQueHayQueVer",
+  "telefono": "999666333",
+  "fax": "000777444",
+  "NIF": "12345678Z",
+  "direccion": {
+    "calle": "BuenaVista",
+    "numero": 123,
+    "piso": 1,
+    "puerta": "a",
+    "codPostal": "08001",
+    "ciudad": "Barcelona",
+    "pais": "España"
+  }
+}]
+
+[{
+  "_id": 2,
+  "nombre": "QuienTeHaVisto",
+  "telefono": "333666999",
+  "fax": "888555222",
+  "NIF": "14269269T",
+  "direccion": {
+    "calle": "Miradir",
+    "numero": 321,
+    "piso": 1,
+    "puerta": "b",
+    "codPostal": "08002",
+    "ciudad": "Barcelona",
+    "pais": "España"
+  }
+}]
