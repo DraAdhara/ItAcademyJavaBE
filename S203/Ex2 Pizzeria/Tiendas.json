@@ -1,0 +1,23 @@
+[{
+  "_id": 1,
+  "direccion": "Roc Boronat s/n",
+  "cp": "08030",
+  "localidad": "barcelona",
+  "provincia": "barcelona",
+  "empleados": [
+    {
+      "nombre": "Mony",
+      "apellido": "Rodriguez",
+      "NIF": "34659876R",
+      "tel": "685036496",
+      "trabajo": "cocinero"
+    },
+    {
+      "nombre": "Rober",
+      "apellido": "Cossio",
+      "NIF": "67483546G",
+      "tel": "685857697",
+      "trabajo": "repartidor"
+    }
+  ]
+}]
