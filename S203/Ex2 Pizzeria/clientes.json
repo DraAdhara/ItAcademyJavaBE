@@ -1,0 +1,10 @@
+[{
+  "_id": 1,
+  "nombre": "David",
+  "apellido": "Martinez",
+  "direccion": "Pallaresa 62",
+  "cp": "08921",
+  "localidad": "Santa Coloma de Gramanet",
+  "provincia": "Barcelona",
+  "telefono": "654-065-495"
+}]

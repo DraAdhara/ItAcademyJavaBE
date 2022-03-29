@@ -1,0 +1,16 @@
+[{
+  "_id": 1,
+  "nombre": "napolitana",
+  "descripcion": "pizza con queso, tomate y ajo",
+  "categoria": "pizza",
+  "imagen": "/imagennapolitana/pizza.svg",
+  "precio": 15
+}
+{
+  "_id": 2,
+  "nombre": "barbacoa",
+  "descripcion": "pizza con carne, tomate y salsa barbacoa",
+  "categoria": "pizza",
+  "imagen": "/imagenbarbacoa/pizza.svg",
+  "precio": 14
+}]

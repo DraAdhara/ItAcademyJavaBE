@@ -1,0 +1,21 @@
+[{
+  "_id": 1,
+  "proveedor": 1,
+  "marca": "Cara",
+  "graduacion I": 0.25,
+  "graduacion D": 0.50,
+  "tipo": "metalica",
+  "color": "amarillo",
+  "precio": 90
+}
+
+{
+  "_id": 2,
+  "proveedor": 2,
+  "marca": "Barata",
+  "graduacion I": 1,
+  "graduacion D": 0.5,
+  "tipo": "pasta",
+  "color": "rojo",
+  "precio": 30
+}]
