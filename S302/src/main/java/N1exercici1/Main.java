@@ -1,4 +1,4 @@
-package N11exercici1;
+package N1exercici1;
 
 public class Main {
     public static void main (String[]args){

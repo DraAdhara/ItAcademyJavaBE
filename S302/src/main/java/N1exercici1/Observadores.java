@@ -1,6 +1,4 @@
-package N11exercici1;
-
-import java.sql.SQLOutput;
+package N1exercici1;
 
 public class Observadores implements IObserver{
 
