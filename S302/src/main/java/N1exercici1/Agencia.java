@@ -22,6 +22,7 @@ public class Agencia {
     public void nuevaAgencia (IObserver obs){
         observers.add(obs);
     }
+
     //Metodo para notificar a los observadores
     public void notificar(){
         for (IObserver observer : observers)

@@ -9,7 +9,8 @@ La passarel·la invocarà el pagament sense conèixer la forma i retornant el co
 La classe que invoca la passarel·la de pagament serà una botiga de sabates.
 
   */
-//Generamos las tiendas
+
+//Generamos las distintas tiendas
   TiendaZapatos merkal = new TiendaZapatos();
   TiendaZapatos spartoo = new TiendaZapatos();
 

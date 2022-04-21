@@ -6,7 +6,7 @@ public class Main {
 canvis quan la Borsa puja o baixa.
 
 Serà necessari que l'objecte Observable mantingui referències als Observers.
-Encara que ha estat deprecada a partir de Java 9, pot utilitzar la interfície java.util.Observer si ho desitges
+Encara que ha estat deprecada a partir de Java 9, pot utilitzar la interfície java.util.Observer si ho desitges.
 */
    Agencia agencia = new Agencia();
 
