@@ -5,5 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
+//@Repository serves as a specialization of @Component, it also enables annotated classes to be discovered and registered with the application context.
 public interface IFruitaRepository extends JpaRepository<Fruita, Integer> {
 }
