@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "ee6ccecc-d3f7-48a7-9659-77a49fa4ffb9",
+		"name": "Project Gradle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21170256"
+	},
+	"item": [
+		{
+			"name": "HelloWorld2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/HelloWorld2/Adhara",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"HelloWorld2",
+						"Adhara"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HelloWorld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/HelloWorld?nom=Adhara",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"HelloWorld"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Adhara"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
