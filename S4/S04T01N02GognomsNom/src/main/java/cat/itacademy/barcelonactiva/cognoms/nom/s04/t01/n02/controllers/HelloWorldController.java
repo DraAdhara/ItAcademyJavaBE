@@ -1,4 +1,4 @@
-package controllers;
+package cat.itacademy.barcelonactiva.cognoms.nom.s04.t01.n02.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,4 +19,4 @@ import org.springframework.web.bind.annotation.RestController;
             return "Hola, " + nom + ". Estàs executant un projecte Gradle.";
         }
     }
-}
+
