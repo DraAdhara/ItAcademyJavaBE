@@ -28,7 +28,7 @@ fully configure the HTTP response.
         if (!fruitaList.isEmpty()){
             return new ResponseEntity<>(fruitaList, HttpStatus.OK);
         }else{
-            return new ResponseEntity<>("There is no information in fruites database", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("There is no information in 'fruites' database", HttpStatus.NOT_FOUND);
         }
     }
 // we take all the information from an existing fruita by ID if exist
@@ -38,28 +38,28 @@ fully configure the HTTP response.
         if (optionalFruita.isPresent()){
             return new ResponseEntity<>(optionalFruita.get(), HttpStatus.OK);
         }else{
-            return new ResponseEntity<>(String.format("ID %d not found in fruites database", id), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(String.format("ID %d not found in 'fruites' database", id), HttpStatus.NOT_FOUND);
         }
     }
 
     // we add a fruita or show corresponding error message
     public ResponseEntity<?> addFruita(Fruita fruita) {
-        if ((fruita.getName() != null) && (fruita.getqKilos() >= 0) && !repository.existsById(fruita.getId())){
+        if ((fruita.getName() != null) && (fruita.getqKilos() > 0) && !repository.existsById(fruita.getId())){
             Fruita saveFruita = repository.save(fruita);
             //The HTTP headers are used to pass additional information between the clients and the server through the request and response header.
             HttpHeaders responseHeaders = new HttpHeaders();
             responseHeaders.setLocation(URI.create(String.format("/fruita/%d", saveFruita.getId())));
-            return new ResponseEntity<>(String.format("Fruit added successfully on /fruita database/%d",
+            return new ResponseEntity<>(String.format("Fruit %d added successfully on 'fruites' database",
                     saveFruita.getId()), responseHeaders, HttpStatus.CREATED);
         }else{
-            if (fruita.getName() == null && fruita.getqKilos() < 0){
-                return new ResponseEntity<>("Name cannot be empty, quantity cannot be less than zero", HttpStatus.BAD_REQUEST);
+            if (fruita.getName() == null && fruita.getqKilos() <= 0){
+                return new ResponseEntity<>("Name cannot be empty, quantity cannot be less than one", HttpStatus.BAD_REQUEST);
             }else if (fruita.getName() == null) {
                 return new ResponseEntity<>("Name cannot be empty", HttpStatus.BAD_REQUEST);
-            }else if (fruita.getqKilos() < 0){
-                return new ResponseEntity<>("Quantity cannot be less than zero", HttpStatus.BAD_REQUEST);
+            }else if (fruita.getqKilos() <= 0){
+                return new ResponseEntity<>("Quantity cannot be less than one", HttpStatus.BAD_REQUEST);
             }else{
-                return new ResponseEntity<>("This ID already exists", HttpStatus.BAD_REQUEST);
+                return new ResponseEntity<>("This ID already exists in 'fruites' database", HttpStatus.BAD_REQUEST);
             }
         }
 
@@ -71,23 +71,23 @@ fully configure the HTTP response.
             if (fruita.getName() != null) {
                 saveFruita.setName(fruita.getName());
             }
-            if (fruita.getqKilos() >= 0){
+            if (fruita.getqKilos() > 0){
                 saveFruita.setqKilos(fruita.getqKilos());
 
             }
             repository.save(saveFruita);
-            return new ResponseEntity<>(String.format("information updated successfully on /fruita/%d", saveFruita.getId()),HttpStatus.OK);
+            return new ResponseEntity<>(String.format("information updated successfully on 'fruites' database with ID %d", saveFruita.getId()),HttpStatus.OK);
         } else {
-            return new ResponseEntity<>(String.format("ID %d not found!", fruita.getId()), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(String.format("ID %d not found in 'fruites' database", fruita.getId()), HttpStatus.NOT_FOUND);
         }
     }
 //delete fruita by ID or show error message
     public ResponseEntity<?> deleteFruita(Integer id) {
         if (repository.existsById(id)){
             repository.deleteById(id);
-            return new ResponseEntity<>(String.format("ID " + id + " %d deleted", id), HttpStatus.OK);
+            return new ResponseEntity<>(String.format("ID %d deleted from 'fruites' database", id), HttpStatus.OK);
         }else{
-            return new ResponseEntity<>(String.format("ID " + id + " %d not found!", id), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(String.format("ID %d not found in 'fruites' database", id), HttpStatus.NOT_FOUND);
         }
     }
 }
