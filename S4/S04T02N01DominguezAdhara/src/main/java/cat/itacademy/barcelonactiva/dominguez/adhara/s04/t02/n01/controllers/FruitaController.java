@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 //@RequestMapping Annotation is used to map HTTP requests to handler methods of MVC and REST controllers
 @RequestMapping("/fruita")
 public class FruitaController {
-/*Spring @Autowired annotation is used for automatic dependency injection. Spring framework is built on dependency
+/*@Autowired annotation is used for automatic dependency injection. Spring framework is built on dependency
 injection and we inject the class dependencies through spring bean configuration file.
  */
     @Autowired

@@ -19,7 +19,7 @@ public class Fruita {
     private int qKilos;
 
 
-//constructor
+//constructors
     public Fruita() {
     }
 
