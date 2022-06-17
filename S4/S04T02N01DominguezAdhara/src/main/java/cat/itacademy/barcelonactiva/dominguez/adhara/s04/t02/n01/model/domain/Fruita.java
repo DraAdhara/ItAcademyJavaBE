@@ -5,8 +5,8 @@ import javax.persistence.*;
 
 //The @Entity annotation specifies that the class is an entity and is mapped to a database table.
 @Entity
-//The @Table annotation specifies the name of the database table to be used for mapping. (not mandatory)
 
+//The @Table annotation specifies the name of the database table to be used for mapping. (not mandatory)
 @Table (name = "fruites")
 public class Fruita {
 //The @Id annotation specifies the primary key of an entity and the @GeneratedValue provides for the specification of
