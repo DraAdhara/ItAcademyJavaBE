@@ -12,11 +12,16 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
+/*@Service annotation is used with classes that provide some business functionalities. Spring context will autodetect
+these classes when annotation-based configuration and classpath scanning is used.
+*/
 @Service
 public class FruitaService {
-
-    @Autowired
-    private IFruitaRepository repository;
+/*@Autowired annotation is used for automatic dependency injection. Spring framework is built on dependency injection
+and we inject the class dependencies through spring bean configuration file.
+*/
+     @Autowired
+     private IFruitaRepository repository;
 
 /*ResponseEntity represents the whole HTTP response: status code, headers, and body. As a result, we can use it to
 fully configure the HTTP response.
